@@ -23,7 +23,7 @@ CONFIG_GEN_IMG_SCRIPT="board/common/gen_image_script/gen_image.sh"
 CONFIG_TOOLCHAIN_PREFIX_RTT="riscv64-unknown-linux-musl-"
 CONFIG_TOOLCHAIN_PATH_RTT="/opt/toolchain/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin"
 CONFIG_TOOLCHAIN_PREFIX_LINUX="riscv64-unknown-linux-gnu-"
-CONFIG_TOOLCHAIN_PATH_LINUX="/opt/toolchain/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.6.0/bin"
+CONFIG_TOOLCHAIN_PATH_LINUX="/opt/toolchain/Xuantie-900-gcc-linux-glibc-x86_64/bin"
 
 #
 # Memory configuration
