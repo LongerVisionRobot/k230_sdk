@@ -18,8 +18,9 @@
 #define CONFIG_TOOLCHAIN_PREFIX_LINUX "riscv64-unknown-linux-gnu-"
 #define CONFIG_LINUX_RUN_CORE_ID 0
 #define CONFIG_RTTHREAD_DEFCONFIG ""
-#define CONFIG_TOOLCHAIN_PATH_LINUX "/opt/toolchain/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.6.0/bin"
+#define CONFIG_TOOLCHAIN_PATH_LINUX "/opt/toolchain/Xuantie-900-gcc-linux-glibc-x86_64/bin"
 #define CONFIG_MEM_BOUNDARY_RESERVED_SIZE 0x00001000
+#define CONFIG_RTL8189FS 1
 #define CONFIG_MEM_LINUX_SYS_SIZE 0x08000000
 #define CONFIG_RTT_CONSOLE_ID 3
 #define CONFIG_LINUX_DEFCONFIG "k230_evb"

@@ -55,7 +55,7 @@ for subdir in $(ls -d */); do
       fi
       
       if [ "$subdir_name" = "llamac" ] && { [ "$curr_pro" = "llamac" ] || [ "$curr_pro" = "all" ]; }; then
-            /opt/toolchain/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.6.0/bin/riscv64-unknown-linux-gnu-g++ -O3 llamac/llama_run.cc -o out/llama_run -lm
+            /opt/toolchain/Xuantie-900-gcc-linux-glibc-x86_64/bin/riscv64-unknown-linux-gnu-g++ -O3 llamac/llama_run.cc -o out/llama_run -lm
       elif { [ "$curr_pro" = "$subdir_name" ] || [ "$curr_pro" = "all" ]; }; then
             echo "******************$subdir_name 开始编译******************"
             if [ "$subdir_name" = "pose_det_rtsp_plug" ]; then

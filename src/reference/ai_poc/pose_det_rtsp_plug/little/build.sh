@@ -2,7 +2,7 @@
 set -x
 
 # set cross build toolchain
-export PATH=$PATH:/opt/toolchain/Xuantie-900-gcc-linux-5.10.4-glibc-x86_64-V2.6.0/bin
+export PATH=$PATH:/opt/toolchain/Xuantie-900-gcc-linux-glibc-x86_64/bin
 
 rm -rf out
 mkdir out
