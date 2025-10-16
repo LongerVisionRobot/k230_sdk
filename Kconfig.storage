@@ -45,7 +45,6 @@ depends on SPI_NOR
                 default 0x1c0000
         
 
-
         config SPI_NOR_LK_BASE
                 hex "linux kernel base "
                 default 0xfc0000
@@ -101,7 +100,6 @@ depends on SPI_NOR
                 config SPI_NOR_AI_MODE_CFG_SIZE
                         hex "ai mode CFG size"
                         default 0x300000
-
 
 
                 #speckle

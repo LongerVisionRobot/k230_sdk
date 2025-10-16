@@ -5,6 +5,7 @@ menu "board configuration"
 choice
 
 	prompt "reference board"
+        default BOARD_K230_CANMV_LCKFB
         help
           Select the reference board.
 
@@ -64,7 +65,7 @@ endchoice
 config BOARD_NAME
        string "define K230 reference board name"
        #depends on BOARD_K230_EVB=y || BOARD_K230_FPGA=y
-       default "k230_evb"
+       default "k230_canmv_lckfb"
 
 config QUICK_BOOT
         bool "quick boot"
