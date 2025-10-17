@@ -13,8 +13,8 @@ config RTL8188FU
         bool "enable rtl8188fu"
         default n
 
-config RTL8189FTV
-        bool "enable rtl8189ftv"
+config RTL8189FS
+        bool "enable rtl8189fs"
         default y
 
 config RTL8723DU
