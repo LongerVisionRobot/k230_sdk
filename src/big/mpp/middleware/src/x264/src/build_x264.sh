@@ -1,5 +1,5 @@
 # Get initial variables
-export RTT_EXEC_PATH=/home/sunxiaopeng/src/work/k230/k230_sdk/toolchain/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin
+export RTT_EXEC_PATH=/opt/toolchain/Xuantie-900-gcc-linux-musl64-x86_64/bin
 export PATH=$PATH:$RTT_EXEC_PATH
 export CROSS_COMPILE="riscv64-unknown-linux-musl"
 export AR=${CROSS_COMPILE}-ar
@@ -18,7 +18,7 @@ function builddef() {
     --disable-asm \
     --enable-static \
     --extra-cflags="-fPIC -Wno-multichar -Wno-deprecated-declarations -Wno-unused-result -Wno-unused-variable -Wno-format -Wno-return-type -Wno-sign-compare -Wno-unused-label" \
-    --extra-ldflags="-T /home/sunxiaopeng/src/work/k230/k230_sdk/src/big/mpp/userapps/sample/linker_scripts/riscv64/link.lds -lpthread -Wl,--whole-archive -Wl,--no-whole-archive -n --static"
+    --extra-ldflags="-T /workspace/src/big/mpp/userapps/sample/linker_scripts/riscv64/link.lds -lpthread -Wl,--whole-archive -Wl,--no-whole-archive -n --static"
 
     make clean
     if [ "$1" == "verbose" ]; then

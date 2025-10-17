@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "/opt/toolchain/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin/riscv64-unknown-linux-musl-g++")
+set(CMAKE_C_COMPILER "/opt/toolchain/Xuantie-900-gcc-linux-musl64-x86_64/bin/riscv64-unknown-linux-musl-g++")
 set(src aiot_gpt.cc play_audio.cc audio_sample.c audio_save_file.c pcm_data.c wav_ctrl.c utils.cc)
 set(bin AIOT_GPT.elf)
 

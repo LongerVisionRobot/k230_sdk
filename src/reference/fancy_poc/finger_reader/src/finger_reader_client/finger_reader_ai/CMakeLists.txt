@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "/opt/toolchain/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin/riscv64-unknown-linux-musl-g++")
+set(CMAKE_C_COMPILER "/opt/toolchain/Xuantie-900-gcc-linux-musl64-x86_64/bin/riscv64-unknown-linux-musl-g++")
 set(src ai_base.cc Finger_Read.cc utils.cc hand_keypoint.cc hand_detection.cc hungarian.cpp my_tracker.cpp sort.cpp ocr_box.cc ocr_reco.cc clipper.cpp audio_sample.c audio_save_file.c pcm_data.c wav_ctrl.c)
 set(bin ocr_poc.elf)
 

@@ -54,8 +54,8 @@ index d81ce3bb72..81ec380736
 --- a/build.sh
 +++ b/build.sh
 @@ -1,8 +1,16 @@
--toolchain_path=~/.tools/gnu_gcc/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin
-+toolchain_path=/opt/toolchain/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin
+-toolchain_path=/opt/toolchain/Xuantie-900-gcc-linux-musl64-x86_64/bin
++toolchain_path=/opt/toolchain/Xuantie-900-gcc-linux-musl64-x86_64/bin
  
  c_compiler=${toolchain_path}/riscv64-unknown-linux-musl-gcc
  cxx_compiler=${toolchain_path}/riscv64-unknown-linux-musl-g++

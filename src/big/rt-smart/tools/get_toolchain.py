@@ -30,7 +30,7 @@ toolchains_config = {
     },
     'riscv64': 
     {
-        'Linux': 'riscv64-linux-musleabi_for_x86_64-pc-linux-gnu_latest.tar.bz2',
+        'Linux': 'riscv64-linux-musleabi_for_x86_64-pc-linux-gnu_rtt_244762.tar.bz2',
         'Windows': 'riscv64-linux-musleabi_for_i686-w64-mingw32_latest.zip'
     }
 }

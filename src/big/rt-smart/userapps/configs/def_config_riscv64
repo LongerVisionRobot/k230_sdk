@@ -12,7 +12,7 @@ CONFIG_ARCH="RISCV64"
 CONFIG_GNU_GCC_MUSL=y
 # CONFIG_GNU_GCC_NEWLIB is not set
 CONFIG_Toolchain="gcc_musl"
-CONFIG_EXEC_PATH="/opt/rtt/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin"
+CONFIG_EXEC_PATH="/opt/toolchain/Xuantie-900-gcc-linux-musl64-x86_64/bin"
 CONFIG_CUSTOM_PREFIX=y
 CONFIG_PREFIX="riscv64-unknown-linux-musl-"
 CONFIG_TARGET_FILE=""

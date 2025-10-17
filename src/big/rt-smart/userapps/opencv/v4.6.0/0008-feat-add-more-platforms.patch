@@ -37,7 +37,7 @@ index 1da12c796f..d81ce3bb72 100644
 +++ b/build.sh
 @@ -1,8 +1,8 @@
 -toolchain_path=~/.tools/gnu_gcc/riscv64-unknown-linux-musl-rv64imafdcv-lp64d/bin/
-+toolchain_path=~/.tools/gnu_gcc/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin
++toolchain_path=/opt/toolchain/Xuantie-900-gcc-linux-musl64-x86_64/bin
  
  c_compiler=${toolchain_path}/riscv64-unknown-linux-musl-gcc
  cxx_compiler=${toolchain_path}/riscv64-unknown-linux-musl-g++

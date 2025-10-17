@@ -1,4 +1,4 @@
-CROSS_COMPILE:=riscv64-linux-
+CROSS_COMPILE:=riscv64-unknown-linux-gnu-
 
 CC	:= $(CROSS_COMPILE)gcc
 C++	:= $(CROSS_COMPILE)g++

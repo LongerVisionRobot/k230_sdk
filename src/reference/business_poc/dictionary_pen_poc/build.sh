@@ -2,7 +2,7 @@
 ### 7.4.0
 #export PATH=$PATH:/data/zhanglimin/code_kmodel_export_build_inference/AndeSight_STD_v323/toolchains/nds64le-linux-glibc-v5d/bin
 ### 7.3.0
-export PATH=$PATH:../../../../toolchain/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin/
+export PATH=$PATH:/opt/toolchain/Xuantie-900-gcc-linux-musl64-x86_64/bin/
 rm -rf build
 mkdir build
 pushd build

@@ -14,7 +14,7 @@ if os.getenv('RTT_CC'):
 
 if  CROSS_TOOL == 'gcc':
     PLATFORM    = 'gcc'
-    EXEC_PATH   = r'/opt/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin'
+    EXEC_PATH   = r'/opt/toolchain/Xuantie-900-gcc-linux-musl64-x86_64/bin'
 else:
     print('Please make sure your toolchains is GNU GCC!')
     exit(0)

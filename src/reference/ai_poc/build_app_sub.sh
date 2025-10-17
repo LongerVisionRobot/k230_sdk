@@ -26,7 +26,7 @@ rm -rf ${k230_bin}
 mkdir -p ${k230_bin}
 
 # set cross build toolchain
-export PATH=$PATH:/opt/toolchain/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin/
+export PATH=$PATH:/opt/toolchain/Xuantie-900-gcc-linux-musl64-x86_64/bin/
 
 clear
 rm -rf out

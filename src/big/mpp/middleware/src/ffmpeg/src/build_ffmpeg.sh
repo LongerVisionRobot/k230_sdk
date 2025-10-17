@@ -1,6 +1,6 @@
 # Get initial variables
-export LDFLAGS="-T /home/sunxiaopeng/src/work/k230/k230_sdk/src/big/mpp/userapps/sample/linker_scripts/riscv64/link.lds -lpthread -Wl,--whole-archive -Wl,--no-whole-archive -n --static"
-export RTT_EXEC_PATH=/home/sunxiaopeng/src/work/k230/k230_sdk/toolchain/riscv64-linux-musleabi_for_x86_64-pc-linux-gnu/bin
+export LDFLAGS="-T /workspace/src/big/mpp/userapps/sample/linker_scripts/riscv64/link.lds -lpthread -Wl,--whole-archive -Wl,--no-whole-archive -n --static"
+export RTT_EXEC_PATH=/opt/toolchain/Xuantie-900-gcc-linux-musl64-x86_64/bin
 export PATH=$PATH:$RTT_EXEC_PATH
 export CROSS_COMPILE="riscv64-unknown-linux-musl"
 export CFLAGS="-mcmodel=medany -march=rv64imafdcv -mabi=lp64d -Wall -n --static"
@@ -16,7 +16,7 @@ function builddef() {
     --arch=riscv64 --prefix=$(pwd)/lib_ffmpeg \
     --pkg-config-flags="--static" \
     --enable-gpl --extra-cflags="-fPIC -Wno-multichar -Wno-deprecated-declarations -Wno-unused-result -Wno-unused-variable -Wno-format -Wno-return-type -Wno-sign-compare -Wno-unused-label" --enable-nonfree --disable-ffplay --enable-swscale --enable-pthreads --disable-armv5te --disable-armv6 --disable-armv6t2 --disable-x86asm  --disable-stripping \
-    --enable-libx264 --extra-cflags=-I/home/sunxiaopeng/src/work/k230/k230_sdk/src/big/mpp/middleware/src/x264/src/lib_x264/include --extra-ldflags=-L/home/sunxiaopeng/src/work/k230/k230_sdk/src/big/mpp/middleware/src/x264/src/lib_x264/lib --extra-libs=-ldl \
+    --enable-libx264 --extra-cflags=-I/workspace/src/big/mpp/middleware/src/x264/src/lib_x264/include --extra-ldflags=-L/workspace/src/big/mpp/middleware/src/x264/src/lib_x264/lib --extra-libs=-ldl \
     --disable-debug --disable-doc --disable-htmlpages --disable-manpages --disable-podpages --disable-txtpages \
     --disable-encoders --enable-encoder=pcm_alaw  --enable-encoder=pcm_mulaw --enable-encoder=aac --enable-libx264 --enable-encoder=libx264 --enable-encoder=mjpeg \
     --disable-decoders --enable-decoder=h264 --enable-decoder=mjpeg --enable-decoder=hevc --enable-decoder=aac --enable-decoder=pcm_alaw --enable-decoder=pcm_mulaw \
