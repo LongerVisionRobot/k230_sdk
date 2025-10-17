@@ -68,7 +68,7 @@ static rt_err_t _spi_bus_device_control(rt_device_t dev,
             if (bus->mode & RT_SPI_BUS_MODE_QSPI)
                 ret = rt_qspi_transfer_message(bus->parent.user_data, args);
             else
-                ret = rt_spi_transfer_message(bus->parent.user_data, args);
+                ret = (rt_err_t)rt_spi_transfer_message(bus->parent.user_data, args);
             break;
         default:
             break;
