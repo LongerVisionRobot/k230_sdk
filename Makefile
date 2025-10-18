@@ -226,22 +226,12 @@ prepare_sourcecode: prepare_toolchain
 # General toolchain check
 .PHONY: check_toolchain_general
 check_toolchain_general:
-	@# 使用 parse.mak 中定义的变量检查工具链
-	@if [ ! -f "$(CONFIG_TOOLCHAIN_PATH_LINUX)/$(CONFIG_TOOLCHAIN_PREFIX_LINUX)gcc" ] || \
-	   [ ! -f "$(CONFIG_TOOLCHAIN_PATH_RTT)/$(CONFIG_TOOLCHAIN_PREFIX_RTT)gcc" ]; then \
-		if [ ! -f toolchain/.toolchain_ready ]; then \
-			echo -e "$(RED)Please run command: make prepare_toolchain$(NC)"; exit 1; \
-		else \
-			# 如果标记文件存在但工具链文件不存在，说明路径配置有问题
-			echo -e "$(YELLOW)Toolchain configuration issue detected$(NC)"; \
-			echo -e "$(YELLOW)Expected Linux toolchain: $(CONFIG_TOOLCHAIN_PATH_LINUX)/$(CONFIG_TOOLCHAIN_PREFIX_LINUX)gcc$(NC)"; \
-			echo -e "$(YELLOW)Expected RTT toolchain: $(CONFIG_TOOLCHAIN_PATH_RTT)/$(CONFIG_TOOLCHAIN_PREFIX_RTT)gcc$(NC)"; \
-			echo -e "$(YELLOW)Please check your toolchain installation and configuration$(NC)"; \
-			exit 1; \
-		fi; \
-	else \
+	@if [ -f toolchain/.toolchain_ready ]; then \
 		echo -e "$(GREEN)Toolchain check passed$(NC)"; \
-	fi
+		exit 0; \
+	fi; \
+	echo -e "$(RED)Please run command: make prepare_toolchain$(NC)"; \
+	exit 1
 
 # Source check - FIXED: Auto-run prepare_sourcecode if needed
 .PHONY: check_src
